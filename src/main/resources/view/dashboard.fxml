@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPaneContext" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.theBar.controller.DashboardFoamCOntroller">
+   <children>
+      <AnchorPane fx:id="naviPaneContext" layoutX="-50.0" prefHeight="1080.0" prefWidth="386.0" style="-fx-background-color: #132043; -fx-background-radius: 40;">
+         <children>
+            <MFXButton depthLevel="LEVEL5" layoutX="65.0" layoutY="200.0" onAction="#btnHomeOnAction" prefHeight="81.0" prefWidth="307.0" rippleAnimateShadow="true" rippleAnimationSpeed="0.5" rippleColor="#0099ff" rippleRadius="20.0" rippleRadiusMultiplier="6.0" style="-fx-background-color: #132043; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </MFXButton>
+            <MFXButton depthLevel="LEVEL5" layoutX="65.0" layoutY="300.0" onAction="#btnEmployeeOnAction" prefHeight="81.0" prefWidth="307.0" rippleAnimateShadow="true" rippleAnimationSpeed="0.5" rippleColor="#0099ff" rippleRadius="20.0" rippleRadiusMultiplier="6.0" style="-fx-background-color: #132043; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;" text="Employee" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </MFXButton>
+            <MFXButton depthLevel="LEVEL5" layoutX="65.0" layoutY="400.0" onAction="#btnCustomerOnAction" prefHeight="81.0" prefWidth="307.0" rippleAnimateShadow="true" rippleAnimationSpeed="0.5" rippleColor="#0099ff" rippleRadius="20.0" rippleRadiusMultiplier="6.0" style="-fx-background-color: #132043; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;" text="Customers" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </MFXButton>
+            <MFXButton depthLevel="LEVEL5" layoutX="65.0" layoutY="600.0" onAction="#btnOrdesOnAction" prefHeight="81.0" prefWidth="307.0" rippleAnimateShadow="true" rippleAnimationSpeed="0.5" rippleColor="#0099ff" rippleRadius="20.0" rippleRadiusMultiplier="6.0" style="-fx-background-color: #132043; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;" text="Orders " textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </MFXButton>
+            <MFXButton depthLevel="LEVEL5" layoutX="65.0" layoutY="500.0" onAction="#btnSuppliesOnAction" prefHeight="81.0" prefWidth="307.0" rippleAnimateShadow="true" rippleAnimationSpeed="0.5" rippleColor="#0099ff" rippleRadius="20.0" rippleRadiusMultiplier="6.0" style="-fx-background-color: #132043; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;" text="Supplies" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </MFXButton>
+            <MFXButton depthLevel="LEVEL5" layoutX="65.0" layoutY="700.0" onAction="#btnProductOnAction" prefHeight="81.0" prefWidth="307.0" rippleAnimateShadow="true" rippleAnimationSpeed="0.5" rippleColor="#0099ff" rippleRadius="20.0" rippleRadiusMultiplier="6.0" style="-fx-background-color: #132043; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;" text="Products" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </MFXButton>
+            <MFXButton depthLevel="LEVEL5" layoutX="65.0" layoutY="965.0" onAction="#btnBackOnAction" prefHeight="81.0" prefWidth="307.0" rippleAnimateShadow="true" rippleAnimationSpeed="0.5" rippleColor="#0099ff" rippleRadius="20.0" rippleRadiusMultiplier="6.0" style="-fx-background-color: #132043; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="subPaneContext" layoutX="393.0" layoutY="238.0" prefHeight="830.0" prefWidth="1464.0" />
+      <Label fx:id="lblTime" alignment="TOP_RIGHT" layoutX="1587.0" layoutY="37.0" prefHeight="88.0" prefWidth="283.0" text="08 : 30">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="TOP_RIGHT" layoutX="1322.0" layoutY="120.0" prefHeight="54.0" prefWidth="551.0" text="sunday 2039" textAlignment="RIGHT">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="162.0" fitWidth="454.0" layoutX="871.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/download.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="637.0" layoutY="205.0" prefHeight="44.0" prefWidth="930.0" />
+   </children>
+</AnchorPane>

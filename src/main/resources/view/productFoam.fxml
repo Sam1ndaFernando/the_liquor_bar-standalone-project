@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootProduct" prefHeight="800.0" prefWidth="1464.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.theBar.controller.ProductFoamController">
+   <children>
+      <TextField fx:id="txtDesc" layoutX="655.0" layoutY="110.0" prefHeight="39.0" prefWidth="255.0" promptText="Description" />
+      <TextField fx:id="txtCode" layoutX="121.0" layoutY="110.0" onAction="#txtCodeOnAcction" prefHeight="39.0" prefWidth="255.0" promptText="Product Code" />
+      <TextField fx:id="txtVolume" layoutX="121.0" layoutY="212.0" prefHeight="39.0" prefWidth="255.0" promptText="Volume of Bottle" />
+      <TextField fx:id="txtUnitPrice" layoutX="655.0" layoutY="212.0" prefHeight="39.0" prefWidth="255.0" promptText="Unit Price" />
+      <TableView fx:id="tblProduct" layoutX="145.0" layoutY="318.0" prefHeight="355.0" prefWidth="1237.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="195.66665649414062" text="Code" />
+            <TableColumn fx:id="colDescription" prefWidth="253.33334350585938" text="Description" />
+            <TableColumn fx:id="colVolumeOfBottle" prefWidth="303.33331298828125" text="Volume of Bottle" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="224.00006103515625" text="Unit Price" />
+            <TableColumn fx:id="colAction" prefWidth="257.0" text="Action" />
+         </columns>
+      </TableView>
+      <MFXButton layoutX="730.0" layoutY="710.0" onAction="#btnSaveOnAction" prefHeight="56.0" prefWidth="183.0" text="Save" />
+      <MFXButton layoutX="930.0" layoutY="710.0" onAction="#btnDeleteOnAction" prefHeight="56.0" prefWidth="183.0" text="Delete" />
+      <MFXButton layoutX="1130.0" layoutY="710.0" onAction="#btnUpdateOnAction" prefHeight="56.0" prefWidth="183.0" text="Update" />
+      <MFXButton layoutX="510.0" layoutY="710.0" onAction="#btnClearOnAction" prefHeight="56.0" prefWidth="183.0" text="Clear" />
+      <Label layoutX="973.0" layoutY="46.0" opacity="0.09" text="Product Manage">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+      <MFXButton layoutX="99.0" layoutY="709.0" onAction="#btnBackOnAction" prefHeight="56.0" prefWidth="183.0" text="Back" />
+   </children>
+</AnchorPane>

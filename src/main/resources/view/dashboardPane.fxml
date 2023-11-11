@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1464.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.theBar.controller.DashboardPaneController">
+   <children>
+      <AnchorPane layoutX="46.0" layoutY="128.0" opacity="0.3" prefHeight="196.0" prefWidth="411.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <AnchorPane layoutX="46.0" layoutY="441.0" opacity="0.3" prefHeight="196.0" prefWidth="411.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <AnchorPane layoutX="530.0" layoutY="128.0" opacity="0.3" prefHeight="196.0" prefWidth="411.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <AnchorPane layoutX="530.0" layoutY="441.0" opacity="0.3" prefHeight="196.0" prefWidth="411.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <AnchorPane layoutX="1012.0" layoutY="129.0" opacity="0.3" prefHeight="510.0" prefWidth="411.0" style="-fx-background-color: black; -fx-background-radius: 30;" />
+      <ImageView fitHeight="275.0" fitWidth="319.0" layoutX="1078.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pics/09-21-24-889_512.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="1031.0" layoutY="509.0" text="We Have Human Rights">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="237.0" text="Customers">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="644.0" layoutY="239.0" text="Orders">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="602.0" layoutY="551.0" text="Employees">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="552.0" text="Today Income">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="133.0" text="10">
+         <font>
+            <Font size="93.0" />
+         </font>
+      </Label>
+      <Label layoutX="682.0" layoutY="134.0" text="02">
+         <font>
+            <Font size="93.0" />
+         </font>
+      </Label>
+      <Label layoutX="676.0" layoutY="441.0" text="60">
+         <font>
+            <Font size="93.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="437.0" text="25.00">
+         <font>
+            <Font size="93.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

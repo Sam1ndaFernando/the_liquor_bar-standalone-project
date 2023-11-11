@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootCustomer" prefHeight="800.0" prefWidth="1464.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.theBar.controller.CustomerFoamController">
+
+    <children>
+        <TextField fx:id="txtName" layoutX="645.0" layoutY="100.0" prefHeight="39.0" prefWidth="255.0" promptText="Name" />
+        <TextField fx:id="txtCusID" layoutX="111.0" layoutY="100.0" onAction="#txtCusIDOnAction" prefHeight="39.0" prefWidth="255.0" promptText="Customer ID" />
+        <MFXComboBox fx:id="comUserID" layoutX="1122.0" layoutY="202.0" onAction="#comUserIdOnAction" prefHeight="40.0" prefWidth="262.0" promptText="user ID" />
+        <TextField fx:id="txtAddress" layoutX="111.0" layoutY="202.0" prefHeight="39.0" prefWidth="255.0" promptText="Address" />
+        <TextField fx:id="txtContact" layoutX="645.0" layoutY="202.0" prefHeight="39.0" prefWidth="255.0" promptText="Contact NO" />
+        <TableView fx:id="tblCustomer" layoutX="135.0" layoutY="308.0" prefHeight="355.0" prefWidth="1237.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="195.66665649414062" text="Customer ID" />
+                <TableColumn fx:id="colName" prefWidth="253.33334350585938" text="Name" />
+                <TableColumn fx:id="colAddress" prefWidth="303.33331298828125" text="Address" />
+                <TableColumn fx:id="colContactNo" prefWidth="257.66668701171875" text="Contact NO" />
+                <TableColumn fx:id="colUser" prefWidth="224.00006103515625" text="Action" />
+            </columns>
+        </TableView>
+        <MFXButton layoutX="720.0" layoutY="700.0" onAction="#btnSaveOnAction" prefHeight="56.0" prefWidth="183.0" text="Save" />
+        <MFXButton layoutX="920.0" layoutY="700.0" onAction="#btnDeleteOnAction" prefHeight="56.0" prefWidth="183.0" text="Delete" />
+        <MFXButton layoutX="1120.0" layoutY="700.0" onAction="#btnUpdateOnAction" prefHeight="56.0" prefWidth="183.0" text="Update" />
+        <MFXButton layoutX="500.0" layoutY="700.0" onAction="#btnClearOnAction" prefHeight="56.0" prefWidth="183.0" text="Clear" />
+      <Label layoutX="963.0" layoutY="36.0" opacity="0.09" text="Customer Manage">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>
